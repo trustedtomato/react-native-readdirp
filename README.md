@@ -4,6 +4,9 @@ Recursive, React Native version of fs.readdirp.
 
 ## Installation
 
+`react-native-fs` is a peer dependency, you'll have to [install that](https://www.npmjs.com/package/react-native-fs) first!
+After that, no more setup is needed than just installing the package:
+
 ```sh
 npm install react-native-readdirp
 ```
@@ -11,11 +14,14 @@ npm install react-native-readdirp
 ## Usage
 
 ```js
-import Readdirp from "react-native-readdirp";
+import fs from 'react-native-fs';
+import readdirp from 'react-native-readdirp';
 
-// ...
+const uri = fs.ExternalStorageDirectoryPath;
 
-const result = await Readdirp.multiply(3, 7);
+readdirp(uri).forEach(file => {
+  console.log(file.path);
+});
 ```
 
 ## Contributing
