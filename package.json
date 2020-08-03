@@ -32,7 +32,12 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "readdirp",
+    "readdir",
+    "recursive",
+    "deep",
+    "fs"
   ],
   "repository": "https://github.com/trustedtomato/react-native-readdirp",
   "author": "Tamas Halasi <trusted.tomato@gmail.com> (https://github.com/trustedtomato)",
